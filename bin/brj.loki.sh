@@ -44,8 +44,6 @@ figlet "done"
 # add repos
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:git-core/ppa
-sudo add-apt-repository -y ppa:quiterss/quiterss
-sudo add-apt-repository -y ppa:keepassx/daily
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
@@ -53,7 +51,6 @@ sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
-sudo add-apt-repository -y ppa:birdie-team/stable
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -80,7 +77,7 @@ sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreo
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install sublime-text
 
-sudo apt-get -y install ubuntu-restricted-extras ffmpeg x264 gstreamer0.10-ffmpeg libdvdread4
+sudo apt-get -y install ubuntu-restricted-extras ffmpeg x264 libdvdread4
 sudo apt-get -y install vlc browser-plugin-vlc
 sudo apt-get -y install clementine
 sudo apt-get -y install mypaint
