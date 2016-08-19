@@ -55,6 +55,7 @@ sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
+echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/chrome.list
 
 # =========================================================
 # begin up keys + ppa
@@ -64,6 +65,8 @@ upkeyz
 sysup
 
 # begin install
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
+#
 sudo apt-get -y install aptitude cowsay curl dpkg aria2 mc git figlet
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install molly-guard openssh-server htop uget preload pollinate smartmontools ethtool 
@@ -74,20 +77,18 @@ sudo apt-get -y install quiterss
 sudo apt-get -y install keepassx
 sudo apt-get -y install remmina remmina-plugin-rdp
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
-sudo apt-get -y install elementary-tweaks
-sudo apt-get -y install sublime-text
-
-sudo apt-get -y install ubuntu-restricted-extras ffmpeg x264 libdvdread4
-sudo apt-get -y install vlc browser-plugin-vlc
+sudo apt-get -y install ubuntu-restricted-extras 
+sudo apt-get -y install ffmpeg x264 libdvdread4 vlc browser-plugin-vlc
 sudo apt-get -y install clementine
 sudo apt-get -y install mypaint
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
-sudo apt-get -y install pidgin purple-vk-plugin pidgin-plugin-pack
+sudo apt-get -y install pidgin pidgin-plugin-pack
 sudo apt-get -y install birdie
 sudo apt-get -y install tshark
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install sublime-text
+sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
 # degarbage system
 #sudo apt-get -y purge midori-granite noise software-center bluez modemmanager scratch-text-editor 
