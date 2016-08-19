@@ -86,6 +86,7 @@ sudo apt-get -y install telegram
 sudo apt-get -y install pidgin pidgin-plugin-pack
 sudo apt-get -y install birdie
 sudo apt-get -y install tshark
+sudo apt-get -y install putty
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install sublime-text
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
