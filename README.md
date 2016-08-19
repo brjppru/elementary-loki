@@ -3,7 +3,8 @@
 
 ## Bolgenos?
 
-Yes. This is 350% bolgenos script
+Yes. This is 350% bolgenos loki script.
+https://ru.wikipedia.org/wiki/Elementary_OS
 
 ## Loki
 
