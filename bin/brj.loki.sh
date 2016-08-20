@@ -43,6 +43,7 @@ figlet "done"
 
 # add repos
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
+sudo add-apt-repository -y ppa:atareao/pushbullet
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
@@ -55,7 +56,7 @@ sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
-echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/chrome.list
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 
 # =========================================================
 # begin up keys + ppa
@@ -87,13 +88,16 @@ sudo apt-get -y install pidgin pidgin-plugin-pack
 sudo apt-get -y install birdie
 sudo apt-get -y install tshark
 sudo apt-get -y install putty
+sudo apt-get -y install homebank
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install sublime-text
+sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
 # degarbage system
 #sudo apt-get -y purge midori-granite noise software-center bluez modemmanager scratch-text-editor 
 #sudo apt-get -y purge pantheon-photos* audience
+# apt-get remove evolution-data-server
 
 sudo rm -rf /usr/lib/plugs/GnomeCC/gnomecc-bluetooth.plug
 sudo rm -rf /usr/lib/plugs/GnomeCC/gnomecc-wacom.plug
