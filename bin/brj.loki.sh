@@ -21,6 +21,9 @@ beroot
 sudo apt-get -y install figlet dpkg
 sudo apt-get -y install software-properties-common
 
+service apparmor stop
+update-rc.d -f apparmor remove
+sudo apt-get -y remove apparmor apparmor-utils
 
 
 upkeyz() {
@@ -52,6 +55,7 @@ sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -70,7 +74,7 @@ echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select tr
 #
 sudo apt-get -y install aptitude cowsay curl dpkg aria2 mc git figlet
 sudo apt-get -y install language-pack-en language-pack-ru
-sudo apt-get -y install molly-guard openssh-server htop uget preload pollinate smartmontools ethtool 
+sudo apt-get -y install molly-guard openssh-server htop powertop uget preload pollinate smartmontools ethtool 
 
 # install my own
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract
@@ -82,6 +86,7 @@ sudo apt-get -y install ubuntu-restricted-extras
 sudo apt-get -y install ffmpeg x264 libdvdread4 vlc browser-plugin-vlc
 sudo apt-get -y install clementine
 sudo apt-get -y install mypaint
+sudo apt-get -y install comixcursors-righthanded-opaque
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
 sudo apt-get -y install pidgin pidgin-plugin-pack
@@ -89,10 +94,13 @@ sudo apt-get -y install birdie
 sudo apt-get -y install tshark
 sudo apt-get -y install putty
 sudo apt-get -y install homebank
+sudo apt-get -y install xournal 
 sudo apt-get -y install elementary-tweaks
+sudo apt-get -y install fluxgui
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper
 sudo apt-get -y install pushbullet-indicator
+sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
 # degarbage system
