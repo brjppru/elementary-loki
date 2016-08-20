@@ -91,6 +91,7 @@ sudo apt-get -y install putty
 sudo apt-get -y install homebank
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install sublime-text
+sudo apt-get -y install glipper
 sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
