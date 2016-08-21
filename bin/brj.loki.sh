@@ -20,14 +20,13 @@ beroot
 
 sudo apt-get -y install figlet dpkg
 sudo apt-get -y install software-properties-common
-
-service apparmor stop
-update-rc.d -f apparmor remove
+sudo service apparmor stop
+sudo update-rc.d -f apparmor remove
 sudo apt-get -y remove apparmor apparmor-utils
 
-
 upkeyz() {
-figlet "upkeys" && sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
+figlet "upkeys"
+sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
 }
 
 sysup() {
@@ -61,6 +60,7 @@ sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
+echo 'deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu xenial main' > /etc/apt/sources.list.d/dropbox.list
 
 # =========================================================
 # begin up keys + ppa
@@ -90,17 +90,20 @@ sudo apt-get -y install comixcursors-righthanded-opaque
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
 sudo apt-get -y install pidgin pidgin-plugin-pack
-sudo apt-get -y install birdie
 sudo apt-get -y install tshark
 sudo apt-get -y install putty
 sudo apt-get -y install homebank
 sudo apt-get -y install xournal 
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install fluxgui
+sudo apt-get -y install doublecmd-gtk
+sudo apt-get -y install caffeine
+sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper
 sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install torbrowser-launcher
+sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
 # degarbage system
