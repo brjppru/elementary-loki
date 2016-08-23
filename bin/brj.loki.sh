@@ -55,12 +55,12 @@ sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
+sudo add-apt-repository -y ppa:linrunner/tlp
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
-echo 'deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu xenial main' > /etc/apt/sources.list.d/dropbox.list
 
 # =========================================================
 # begin up keys + ppa
