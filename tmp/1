@@ -1,0 +1,8 @@
+Vocal – podcast application
+
+sudo apt-add-repository ppa:nathandyer/vocal-daily
+sudo apt-get update
+sudo apt-get install vocal 
+
+
+sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
