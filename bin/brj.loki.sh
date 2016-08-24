@@ -105,6 +105,7 @@ sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper
 sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install vocal
+sudo apt-get -y install ioquake3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
