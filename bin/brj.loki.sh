@@ -99,6 +99,7 @@ sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install fluxgui
 sudo apt-get -y install doublecmd-gtk
 sudo apt-get -y install caffeine
+sudo apt-get -y install freerdp
 sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper
