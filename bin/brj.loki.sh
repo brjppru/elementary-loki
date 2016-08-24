@@ -75,7 +75,7 @@ echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select tr
 #
 sudo apt-get -y install aptitude cowsay curl dpkg aria2 mc git figlet
 sudo apt-get -y install language-pack-en language-pack-ru
-sudo apt-get -y install molly-guard openssh-server htop powertop uget preload pollinate smartmontools ethtool 
+sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool 
 
 # install my own
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract
@@ -112,7 +112,7 @@ sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 # degarbage system
 sudo apt-get -y purge noise pantheon-photos* audience evolution-data-server
 
-rm -f /var/cache/apt/archives
+rm -rf /var/cache/apt/archives
 
 upkeyz
 sysup
