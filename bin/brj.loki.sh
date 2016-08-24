@@ -53,7 +53,7 @@ sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
-sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+#sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-add-repository -y ppa:nathandyer/vocal-daily
@@ -75,9 +75,10 @@ echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select tr
 #
 sudo apt-get -y install aptitude cowsay curl dpkg aria2 mc git figlet
 sudo apt-get -y install language-pack-en language-pack-ru
-sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool 
+sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 
 # install my own
+
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract
 sudo apt-get -y install quiterss
 sudo apt-get -y install keepassx
@@ -108,7 +109,7 @@ sudo apt-get -y install vocal
 sudo apt-get -y install ioquake3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
+#sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
 # degarbage system
