@@ -56,6 +56,7 @@ sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -y ppa:linrunner/tlp
+sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -102,25 +103,22 @@ sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper
 sudo apt-get -y install pushbullet-indicator
+sudo apt-get -y install vocal
 sudo apt-get -y install torbrowser-launcher
+sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
 # degarbage system
-#sudo apt-get -y purge midori-granite noise software-center bluez modemmanager scratch-text-editor 
-#sudo apt-get -y purge pantheon-photos* audience
-# apt-get remove evolution-data-server
+sudo apt-get -y purge noise pantheon-photos* audience evolution-data-server
 
-sudo rm -rf /usr/lib/plugs/GnomeCC/gnomecc-bluetooth.plug
-sudo rm -rf /usr/lib/plugs/GnomeCC/gnomecc-wacom.plug
+rm -f /var/cache/apt/archives
 
-cd /etc/xdg/autostart
-sudo sed --in-place 's/NoDisplay=true/NoDisplay=false/g' *.desktop
+upkeyz
+sysup
 
 #
 # the end, the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
 #
 
-#sudo apt-get install -y gdebi guake glipper doublecmd-gtk xournal powertop preload smartmontools ethtool qt4-qtconfig dconf-tools
-#sudo apt-get install -y adobe-flashplugin furiusisomount
