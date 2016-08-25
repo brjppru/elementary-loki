@@ -86,7 +86,7 @@ sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget prelo
 
 # install my own
 
-sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract
+sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt-get -y install quiterss
 sudo apt-get -y install keepassx
 sudo apt-get -y install remmina remmina-plugin-rdp
@@ -117,6 +117,8 @@ sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get -y install xserver-xorg-video-intel
 sudo apt-get -y install audacious
+sudo apt-get -y install mutt-patched thunderbird thunderbird-globalmenu
+sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
 
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 
