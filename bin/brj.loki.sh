@@ -15,14 +15,16 @@ fi
 
 }
 
-
 beroot
 
-sudo apt-get -y install figlet dpkg
-sudo apt-get -y install software-properties-common
+sudo apt-key -y net-update
+sudo apt-key -y update
+
+sudo apt-get -y update
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
-sudo apt-get -y remove apparmor apparmor-utils
+sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
 
 upkeyz() {
 figlet "upkeys"
@@ -42,6 +44,9 @@ sudo dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt-get -y purge
 sudo updatedb
 figlet "done"
 }
+
+
+figlet "add key's"
 
 # add repos
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
@@ -72,8 +77,9 @@ sysup
 
 # begin install
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
+echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
 #
-sudo apt-get -y install aptitude cowsay curl dpkg aria2 mc git figlet
+sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 
@@ -91,7 +97,6 @@ sudo apt-get -y install mypaint
 sudo apt-get -y install comixcursors-righthanded-opaque
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
-sudo apt-get -y install pidgin pidgin-plugin-pack
 sudo apt-get -y install tshark
 sudo apt-get -y install putty
 sudo apt-get -y install homebank
@@ -109,11 +114,11 @@ sudo apt-get -y install vocal
 sudo apt-get -y install ioquake3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
-#sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
-sudo apt-get -y install --allow-unauthenticated google-chrome-stable
 
-# degarbage system
-sudo apt-get -y purge noise pantheon-photos* audience evolution-data-server
+sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
+
+#sudo apt-get -y install pidgin pidgin-plugin-pack
+#sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
 
 rm -rf /var/cache/apt/archives
 
