@@ -20,7 +20,7 @@ sudo apt-key -y net-update
 sudo apt-key -y update
 
 sudo apt-get -y update
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils aptitude
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
@@ -53,7 +53,7 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
-sudo add-apt-repository -y ppa:me-davidsansome/clementine
+#sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 #sudo add-apt-repository -y ppa:ubuntu-wine/ppa
@@ -115,6 +115,8 @@ sudo apt-get -y install vocal
 sudo apt-get -y install ioquake3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
+sudo apt-get -y install xserver-xorg-video-intel
+sudo apt-get -y install audacious
 
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 
