@@ -5,7 +5,6 @@
 # http://brj.pp.ru/
 #
 
-
 beroot() {
 
 if [ "$(id -u)" != "0" ]; then
@@ -45,7 +44,6 @@ sudo updatedb
 figlet "done"
 }
 
-
 figlet "add key's"
 
 # add repos
@@ -65,6 +63,7 @@ sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
+#
 echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 
@@ -78,6 +77,8 @@ sysup
 # begin install
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
+#
+sudo apt-get -y install tataranovich-keyring
 #
 sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet
 sudo apt-get -y install language-pack-en language-pack-ru
