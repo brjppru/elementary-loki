@@ -98,7 +98,7 @@ sudo apt-get -y install mypaint
 sudo apt-get -y install comixcursors-righthanded-opaque
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
-sudo apt-get -y install tshark
+sudo apt-get -y install tshark iftop
 sudo apt-get -y install putty
 sudo apt-get -y install homebank
 sudo apt-get -y install xournal 
