@@ -24,6 +24,9 @@ sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
+sudo apt-get -y purge activity-log-manager-common activity-log-manager-control-center zeitgeist zeitgeist-core zeitgeist-datahub
+sudo apt-get -y purge modemmanager
+sudo apt-get -y purge sane
 
 upkeyz() {
 figlet "upkeys"
@@ -93,7 +96,6 @@ sudo apt-get -y install remmina remmina-plugin-rdp
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt-get -y install ubuntu-restricted-extras 
 sudo apt-get -y install ffmpeg x264 libdvdread4 vlc browser-plugin-vlc
-sudo apt-get -y install clementine
 sudo apt-get -y install mypaint
 sudo apt-get -y install comixcursors-righthanded-opaque
 sudo apt-get -y install transmission minissdpd natpmp-utils
@@ -113,6 +115,7 @@ sudo apt-get -y install glipper
 sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install vocal
 sudo apt-get -y install ioquake3
+sudo apt-get -y install sqlite3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get -y install xserver-xorg-video-intel
