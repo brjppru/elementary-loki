@@ -26,7 +26,7 @@ sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
 sudo apt-get -y purge activity-log-manager-common activity-log-manager-control-center zeitgeist zeitgeist-core zeitgeist-datahub
 sudo apt-get -y purge modemmanager
-sudo apt-get -y purge sane
+sudo apt-get -y purge sane pantheon-mail
 
 upkeyz() {
 figlet "upkeys"
