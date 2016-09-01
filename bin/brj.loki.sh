@@ -111,7 +111,7 @@ sudo apt-get -y install caffeine
 sudo apt-get -y install freerdp
 sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
-sudo apt-get -y install glipper
+sudo apt-get -y install glipper xclip xsel
 sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install vocal
 sudo apt-get -y install ioquake3
