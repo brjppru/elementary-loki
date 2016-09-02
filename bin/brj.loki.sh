@@ -83,7 +83,7 @@ echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set
 #
 sudo apt-get -y install tataranovich-keyring
 #
-sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet adb
+sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet adb terminator
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 
