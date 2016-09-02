@@ -83,7 +83,7 @@ echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set
 #
 sudo apt-get -y install tataranovich-keyring
 #
-sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet adb terminator
+sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet adb terminator lnav
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 
@@ -95,15 +95,16 @@ sudo apt-get -y install keepassx
 sudo apt-get -y install remmina remmina-plugin-rdp
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt-get -y install ubuntu-restricted-extras 
-sudo apt-get -y install ffmpeg x264 libdvdread4 vlc browser-plugin-vlc
+sudo apt-get -y install ffmpeg x264 libdvdread4 
+sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 sudo apt-get -y install mypaint
-sudo apt-get -y install comixcursors-righthanded-opaque
+sudo apt-get -y install comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
 sudo apt-get -y install tshark iftop
 sudo apt-get -y install putty
 sudo apt-get -y install homebank
-sudo apt-get -y install xournal 
+sudo apt-get -y install xournal
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install fluxgui
 sudo apt-get -y install doublecmd-gtk
