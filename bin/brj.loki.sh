@@ -20,7 +20,7 @@ sudo apt-key -y net-update
 sudo apt-key -y update
 
 sudo apt-get -y update
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils aptitude
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils aptitude software-properties-common ppa-purge
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
@@ -83,8 +83,9 @@ echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set
 #
 sudo apt-get -y install tataranovich-keyring
 #
-sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet adb terminator lnav xkbset
+sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet lnav xkbset
 sudo apt-get -y install language-pack-en language-pack-ru
+sudo apt-get -y install android-tools-adb android-tools-fastboot
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 sudo apt-get -y install ssmtp
 
