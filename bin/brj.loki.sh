@@ -20,7 +20,7 @@ sudo apt-key -y net-update
 sudo apt-key -y update
 
 sudo apt-get -y update
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils aptitude software-properties-common ppa-purge
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils aptitude ppa-purge
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
@@ -63,6 +63,7 @@ sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-add-repository -y ppa:nathandyer/vocal-daily
+sudo add-apt-repository -y ppa:linphone/release
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -100,7 +101,7 @@ sudo apt-get -y install ubuntu-restricted-extras
 sudo apt-get -y install ffmpeg x264 libdvdread4 
 #sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 sudo apt-get -y install vlc browser-plugin-vlc
-sudo apt-get -y install mypaint
+sudo apt-get -y install mypaint viewnior
 sudo apt-get -y install comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
@@ -126,6 +127,7 @@ sudo apt-get -y install xserver-xorg-video-intel
 sudo apt-get -y install audacious
 sudo apt-get -y install mutt-patched thunderbird thunderbird-globalmenu
 sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
+sudo apt-get -y install linphone
 
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 
