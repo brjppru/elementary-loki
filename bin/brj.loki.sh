@@ -90,15 +90,15 @@ sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git 
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install android-tools-adb android-tools-fastboot 
 sudo apt-get -y install libfuse-dev android-tools-adb
-sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 sudo apt-get -y install ssmtp
+sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 
 # install my own
 
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt-get -y install quiterss
 sudo apt-get -y install keepassx
-sudo apt-get -y install remmina remmina-plugin-rdp
+#sudo apt-get -y install remmina remmina-plugin-rdp
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt-get -y install ubuntu-restricted-extras 
 sudo apt-get -y install ffmpeg x264 libdvdread4 
