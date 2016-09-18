@@ -20,7 +20,8 @@ sudo apt-key -y net-update
 sudo apt-key -y update
 
 sudo apt-get -y update
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg software-properties-common debconf-utils aptitude ppa-purge
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan
+sudo apt-get -y install software-properties-common debconf-utils aptitude ppa-purge bzip2
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
@@ -64,6 +65,7 @@ sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 sudo add-apt-repository -y ppa:linphone/release
+sudo add-apt-repository -y ppa:wireshark-dev/stable
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -119,7 +121,6 @@ sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper xclip xsel
 sudo apt-get -y install pushbullet-indicator
 sudo apt-get -y install vocal
-sudo apt-get -y install ioquake3
 sudo apt-get -y install sqlite3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
@@ -130,6 +131,8 @@ sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt-get -y install linphone
 
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
+
+sudo apt-get -y install ioquake3 dosbox
 
 #sudo apt-get -y install pidgin pidgin-plugin-pack
 #sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
