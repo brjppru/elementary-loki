@@ -1,4 +1,5 @@
 #!/bin/bash
+
 find ~/ -size +100k -type f -print0 | \
 while read -d '' FILE; do
   abs_file_name=$(readlink -f "$FILE")

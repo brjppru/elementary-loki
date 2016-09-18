@@ -88,7 +88,8 @@ sudo apt-get -y install tataranovich-keyring
 #
 sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet lnav xkbset
 sudo apt-get -y install language-pack-en language-pack-ru
-sudo apt-get -y install android-tools-adb android-tools-fastboot
+sudo apt-get -y install android-tools-adb android-tools-fastboot 
+sudo apt-get -y install libfuse-dev android-tools-adb
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool
 sudo apt-get -y install ssmtp
 
