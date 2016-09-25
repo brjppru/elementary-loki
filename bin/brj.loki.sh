@@ -105,6 +105,7 @@ sudo apt-get -y install ffmpeg x264 libdvdread4
 #sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 sudo apt-get -y install vlc browser-plugin-vlc
 sudo apt-get -y install mypaint viewnior
+sudo apt-get -y install elementary-wallpapers-extra
 sudo apt-get -y install comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt-get -y install transmission minissdpd natpmp-utils
 sudo apt-get -y install telegram
