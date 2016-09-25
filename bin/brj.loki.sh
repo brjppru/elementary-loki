@@ -53,6 +53,7 @@ figlet "add key's"
 # add repos
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
+sudo add-apt-repository -y ppa:plushuang-tw/uget-stable
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
