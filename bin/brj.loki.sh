@@ -21,7 +21,7 @@ sudo apt-key -y update
 
 sudo apt-get -y update
 sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan
-sudo apt-get -y install software-properties-common debconf-utils aptitude ppa-purge bzip2
+sudo apt-get -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
@@ -90,7 +90,8 @@ sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git 
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install android-tools-adb android-tools-fastboot bluetooth
 sudo apt-get -y install libfuse-dev android-tools-adb
-sudo apt-get -y install ssmtp
+sudo apt-get -y install ssmtp 
+sudo apt-get -y install gtk-redshift
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
 # install my own
