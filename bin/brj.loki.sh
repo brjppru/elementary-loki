@@ -91,7 +91,7 @@ sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git 
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install android-tools-adb android-tools-fastboot bluetooth
 sudo apt-get -y install libfuse-dev android-tools-adb
-sudo apt-get -y install ssmtp 
+sudo apt-get -y install ssmtp
 sudo apt-get -y install gtk-redshift
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
@@ -116,7 +116,7 @@ sudo apt-get -y install putty
 sudo apt-get -y install homebank
 sudo apt-get -y install xournal
 sudo apt-get -y install elementary-tweaks
-sudo apt-get -y install fluxgui
+#sudo apt-get -y install fluxgui
 sudo apt-get -y install doublecmd-gtk
 sudo apt-get -y install caffeine
 sudo apt-get -y install freerdp
@@ -133,10 +133,10 @@ sudo apt-get -y install audacious
 sudo apt-get -y install mutt-patched thunderbird thunderbird-globalmenu
 sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt-get -y install linphone
-
+sudo apt-get -y install corebird
+sudo apt-get -y install claws-mail claws-mail-fancy-plugin claws-mail-gdata-plugin claws-mail-smime-plugin claws-mail-themes claws-mail-vcalendar-plugin
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
-
-sudo apt-get -y install ioquake3 dosbox
+sudo apt-get -y install dosbox
 
 #sudo apt-get -y install pidgin pidgin-plugin-pack
 #sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme

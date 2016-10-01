@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exit 0
+
 sudo apt -y install software-properties-common ppa-purge
 sudo add-apt-repository -y ppa:elementary-os/stable
 sudo ppa-purge -y ppa:elementary-os/daily
