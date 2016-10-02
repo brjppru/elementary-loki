@@ -61,8 +61,8 @@ sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 #sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
-#sudo add-apt-repository -y ppa:ubuntu-wine/ppa
-sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
+sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+#sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 sudo add-apt-repository -y ppa:linphone/release
@@ -137,6 +137,7 @@ sudo apt-get -y install corebird
 sudo apt-get -y install claws-mail claws-mail-fancy-plugin claws-mail-gdata-plugin claws-mail-smime-plugin claws-mail-themes claws-mail-vcalendar-plugin
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 sudo apt-get -y install dosbox
+sudo apt-get -y install wine
 
 #sudo apt-get -y install pidgin pidgin-plugin-pack
 #sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
