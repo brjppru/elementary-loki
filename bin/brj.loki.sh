@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# =========================================================
+# begin up keys + ppa
+# =========================================================
 #
 # the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
@@ -14,23 +17,35 @@ fi
 
 }
 
+# =========================================================
+# begin up keys + ppa
+# =========================================================
 beroot
 
-sudo apt-key -y net-update
-sudo apt-key -y update
+sudo apt-key net-update
 
-sudo apt-get -y update
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan
-sudo apt-get -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
+
+sudo apt-get -y update
+
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan
+sudo apt-get -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
+
+# =========================================================
+# nuke it!
+# =========================================================
+
 sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
 sudo apt-get -y purge activity-log-manager-common activity-log-manager-control-center zeitgeist zeitgeist-core zeitgeist-datahub
 sudo apt-get -y purge modemmanager appcenter
 sudo apt-get -y purge sane pantheon-mail
 sudo apt-get -y purge switchboard-plug-parental-controls
-
-#sudo apt-get purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease elementaryos-report-problem-dockitem evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0 libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport python3-problem-report screenshot-tool switchboard-plug-a11y switchboard-plug-mouse-touchpad switchboard-plug-networking switchboard-plug-parental-controls
+sudo apt-get -y purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease elementaryos-report-problem-dockitem 
+sudo apt-get -y purge evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts 
+sudo apt-get -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0 
+sudo apt-get -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport 
+sudo apt-get -y purge python3-problem-report switchboard-plug-parental-controls
 
 upkeyz() {
 figlet "upkeys"
@@ -53,7 +68,10 @@ figlet "done"
 
 figlet "add key's"
 
+# =========================================================
 # add repos
+# =========================================================
+#
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
 sudo add-apt-repository -y ppa:plushuang-tw/uget-stable
@@ -61,15 +79,16 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
-#sudo add-apt-repository -y ppa:me-davidsansome/clementine
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
-#sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
+
+#sudo add-apt-repository -y ppa:me-davidsansome/clementine
+#sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 
 # no ppa repos
 echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -84,7 +103,10 @@ echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /et
 upkeyz
 sysup
 
+# =========================================================
 # begin install
+# =========================================================
+#
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
 #
@@ -97,17 +119,19 @@ sudo apt-get -y install libfuse-dev android-tools-adb
 sudo apt-get -y install ssmtp
 sudo apt-get -y install gtk-redshift
 sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
-
+#
 # install my own
-
+#
+#sudo apt-get -y install remmina remmina-plugin-rdp
+#sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
+#sudo apt-get -y install fluxgui
+#
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt-get -y install quiterss
 sudo apt-get -y install keepassx
-#sudo apt-get -y install remmina remmina-plugin-rdp
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt-get -y install ubuntu-restricted-extras 
 sudo apt-get -y install ffmpeg x264 libdvdread4 
-#sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 sudo apt-get -y install vlc browser-plugin-vlc
 sudo apt-get -y install mypaint viewnior
 sudo apt-get -y install elementary-wallpapers-extra
@@ -119,7 +143,6 @@ sudo apt-get -y install putty
 sudo apt-get -y install homebank
 sudo apt-get -y install xournal
 sudo apt-get -y install elementary-tweaks
-#sudo apt-get -y install fluxgui
 sudo apt-get -y install doublecmd-gtk
 sudo apt-get -y install caffeine
 sudo apt-get -y install freerdp
@@ -146,7 +169,6 @@ sudo apt-get -y install gtk-recordmydesktop
 sudo apt-get -y install audacity
 sudo apt-get -y install gparted
 
-#sudo apt-get -y install pidgin pidgin-plugin-pack
 #sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
 
 rm -rf /var/cache/apt/archives
