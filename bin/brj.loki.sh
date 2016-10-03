@@ -28,6 +28,9 @@ sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience ev
 sudo apt-get -y purge activity-log-manager-common activity-log-manager-control-center zeitgeist zeitgeist-core zeitgeist-datahub
 sudo apt-get -y purge modemmanager appcenter
 sudo apt-get -y purge sane pantheon-mail
+sudo apt-get -y purge switchboard-plug-parental-controls
+
+#sudo apt-get purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease elementaryos-report-problem-dockitem evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0 libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport python3-problem-report screenshot-tool switchboard-plug-a11y switchboard-plug-mouse-touchpad switchboard-plug-networking switchboard-plug-parental-controls
 
 upkeyz() {
 figlet "upkeys"
@@ -138,6 +141,10 @@ sudo apt-get -y install claws-mail claws-mail-fancy-plugin claws-mail-gdata-plug
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 sudo apt-get -y install dosbox
 sudo apt-get -y install wine
+sudo apt-get -y install hardinfo
+sudo apt-get -y install gtk-recordmydesktop
+sudo apt-get -y install audacity
+sudo apt-get -y install gparted
 
 #sudo apt-get -y install pidgin pidgin-plugin-pack
 #sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
