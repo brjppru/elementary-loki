@@ -29,7 +29,7 @@ sudo update-rc.d -f apparmor remove
 
 sudo apt-get -y update
 
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan
+sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan dconf-editor
 sudo apt-get -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
 
 # =========================================================

@@ -1,4 +1,7 @@
 #!/bin/sh
+
+exit 0 
+
 cd /usr/share/wine/fonts
 rm tahoma.ttf
 rm tahomabd.ttf
