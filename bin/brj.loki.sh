@@ -127,11 +127,11 @@ sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget prelo
 #sudo apt-get -y install fluxgui
 #
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
-sudo apt-get -y install quiterss
+sudo apt-get -y install quiterss elinks
 sudo apt-get -y install keepassx
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt-get -y install ubuntu-restricted-extras 
-sudo apt-get -y install ffmpeg x264 libdvdread4 
+sudo apt-get -y install ffmpeg x264 libdvdread4 lame
 sudo apt-get -y install vlc browser-plugin-vlc
 sudo apt-get -y install mypaint viewnior
 sudo apt-get -y install elementary-wallpapers-extra
@@ -150,7 +150,7 @@ sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper xclip xsel
 sudo apt-get -y install pushbullet-indicator
-sudo apt-get -y install vocal
+sudo apt-get -y install vocal lame
 sudo apt-get -y install sqlite3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
