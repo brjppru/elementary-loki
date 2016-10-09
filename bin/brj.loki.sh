@@ -88,6 +88,7 @@ sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
 sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
+sudo add-apt-repository -y ppa:quiterss/quiterss
 
 #sudo add-apt-repository -y ppa:me-davidsansome/clementine
 #sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
