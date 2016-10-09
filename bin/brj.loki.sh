@@ -76,6 +76,7 @@ sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
 sudo add-apt-repository -y ppa:plushuang-tw/uget-stable
 sudo add-apt-repository -y ppa:git-core/ppa
+sudo add-apt-repository -y ppa:ubuntuhandbook1/corebird
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
@@ -86,6 +87,7 @@ sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
+sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 
 #sudo add-apt-repository -y ppa:me-davidsansome/clementine
 #sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
@@ -155,7 +157,7 @@ sudo apt-get -y install sqlite3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get -y install xserver-xorg-video-intel
-sudo apt-get -y install audacious
+sudo apt-get -y install audacious audacious-plugins
 sudo apt-get -y install mutt-patched thunderbird thunderbird-globalmenu
 sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt-get -y install linphone
