@@ -84,12 +84,13 @@ sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:linrunner/tlp
-sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
 sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 sudo add-apt-repository -y ppa:quiterss/quiterss
+sudo add-apt-repository -y ppa:ricotz/docky
 
+#sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 #sudo add-apt-repository -y ppa:me-davidsansome/clementine
 #sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 
@@ -147,23 +148,22 @@ sudo apt-get -y install homebank
 sudo apt-get -y install xournal
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install doublecmd-gtk
-sudo apt-get -y install caffeine
-sudo apt-get -y install freerdp
+#sudo apt-get -y install caffeine
+#sudo apt-get -y install freerdp
 sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper xclip xsel
 sudo apt-get -y install pushbullet-indicator
-sudo apt-get -y install vocal lame
+sudo apt-get -y install lame
 sudo apt-get -y install sqlite3
 sudo apt-get -y install torbrowser-launcher
 sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
 sudo apt-get -y install xserver-xorg-video-intel
 sudo apt-get -y install audacious audacious-plugins
-sudo apt-get -y install mutt-patched thunderbird thunderbird-globalmenu
+sudo apt-get -y install thunderbird
 sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt-get -y install linphone
 sudo apt-get -y install corebird
-sudo apt-get -y install claws-mail claws-mail-fancy-plugin claws-mail-gdata-plugin claws-mail-smime-plugin claws-mail-themes claws-mail-vcalendar-plugin
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 sudo apt-get -y install dosbox
 sudo apt-get -y install wine
@@ -171,6 +171,8 @@ sudo apt-get -y install hardinfo
 sudo apt-get -y install gtk-recordmydesktop
 sudo apt-get -y install audacity
 sudo apt-get -y install gparted
+
+sudo apt install -y --reinstall plank
 
 #sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
 
