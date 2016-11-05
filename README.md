@@ -1,4 +1,3 @@
-
 # The brj loki elementary OS
 
 ## Bolgenos?
