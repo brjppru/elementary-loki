@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# bolgenos for elementaryos-0.4-stable-amd64.20160921.iso
+
 # =========================================================
 # begin up keys + ppa
 # =========================================================
@@ -164,13 +166,18 @@ sudo apt-get -y install thunderbird
 sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt-get -y install linphone
 sudo apt-get -y install corebird
-sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 sudo apt-get -y install dosbox
 sudo apt-get -y install wine
 sudo apt-get -y install hardinfo
 sudo apt-get -y install gtk-recordmydesktop
 sudo apt-get -y install audacity
 sudo apt-get -y install gparted
+sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
+
+sudo apt-get -y install xfonts-terminus console-terminus
+sudo apt-get -y install ttf-dejavu
+sudo apt-get -y install ttf-liberation
+sudo apt-get -y install fonts-elementary-core fonts-droid-fallback
 
 sudo apt install -y --reinstall plank
 
