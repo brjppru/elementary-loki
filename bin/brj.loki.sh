@@ -22,6 +22,7 @@ fi
 # =========================================================
 # begin up keys + ppa
 # =========================================================
+
 beroot
 
 sudo apt-key net-update
@@ -49,10 +50,18 @@ sudo apt-get -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gs
 sudo apt-get -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport 
 sudo apt-get -y purge python3-problem-report switchboard-plug-parental-controls
 
+# =========================================================
+# upkeys
+# =========================================================
+
 upkeyz() {
 figlet "upkeys"
 sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
 }
+
+# =========================================================
+# sysup
+# =========================================================
 
 sysup() {
 
@@ -68,12 +77,14 @@ sudo updatedb
 figlet "done"
 }
 
-figlet "add key's"
 
 # =========================================================
 # add repos
 # =========================================================
 #
+
+figlet "add key's"
+
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
 sudo add-apt-repository -y ppa:plushuang-tw/uget-stable
@@ -92,6 +103,7 @@ sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 sudo add-apt-repository -y ppa:quiterss/quiterss
 sudo add-apt-repository -y ppa:ricotz/docky
 
+# sleeping 
 #sudo apt-add-repository -y ppa:nathandyer/vocal-daily
 #sudo add-apt-repository -y ppa:me-davidsansome/clementine
 #sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
@@ -131,6 +143,7 @@ sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget prelo
 #sudo apt-get -y install remmina remmina-plugin-rdp
 #sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 #sudo apt-get -y install fluxgui
+#sudo apt-get -y install caffeine
 #
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt-get -y install quiterss elinks
@@ -150,8 +163,7 @@ sudo apt-get -y install homebank
 sudo apt-get -y install xournal
 sudo apt-get -y install elementary-tweaks
 sudo apt-get -y install doublecmd-gtk
-#sudo apt-get -y install caffeine
-#sudo apt-get -y install freerdp
+sudo apt-get -y install freerdp
 sudo apt-get -y install tlp tlp-rdw
 sudo apt-get -y install sublime-text
 sudo apt-get -y install glipper xclip xsel
@@ -172,24 +184,27 @@ sudo apt-get -y install hardinfo
 sudo apt-get -y install gtk-recordmydesktop
 sudo apt-get -y install audacity
 sudo apt-get -y install gparted
-sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 
 sudo apt-get -y install xfonts-terminus console-terminus
 sudo apt-get -y install ttf-dejavu
 sudo apt-get -y install ttf-liberation
 sudo apt-get -y install fonts-elementary-core fonts-droid-fallback
 
+sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
 sudo apt install -y --reinstall plank
 
-#sudo apt-get -y install --allow-unauthenticated dropbox python-gpgme
+# =========================================================
+# nuke archives
+# =========================================================
 
 rm -rf /var/cache/apt/archives
 
 upkeyz
 sysup
 
-#
+# =========================================================
+# the end
+# =========================================================
 # the end, the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
 #
-
