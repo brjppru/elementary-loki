@@ -134,9 +134,9 @@ sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git 
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install android-tools-adb android-tools-fastboot bluetooth
 sudo apt-get -y install libfuse-dev android-tools-adb
-sudo apt-get -y install ssmtp
+sudo apt-get -y install ssmtp whois
 sudo apt-get -y install gtk-redshift
-sudo apt-get -y install molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
+sudo apt-get -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 #
 # install my own
 #
@@ -184,6 +184,8 @@ sudo apt-get -y install hardinfo
 sudo apt-get -y install gtk-recordmydesktop
 sudo apt-get -y install audacity
 sudo apt-get -y install gparted
+sudo apt-get -y install ntfs-config
+sudo apt-get -y install systemd-ui
 
 sudo apt-get -y install xfonts-terminus console-terminus
 sudo apt-get -y install ttf-dejavu
