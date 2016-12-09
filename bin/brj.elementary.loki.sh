@@ -214,11 +214,14 @@ rm -rf /var/cache/apt/archives
 upkeyz
 sysup
 
+# =========================================================
+
 notify-send -i utilities-terminal brj.done "All tasks ok successfully! ;-)"
 
 # =========================================================
 # the end
 # =========================================================
+#
 # the end, the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
 #
