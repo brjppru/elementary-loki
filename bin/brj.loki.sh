@@ -25,7 +25,10 @@ fi
 
 beroot
 
-sudo apt-key net-update
+sudo apt-key -y net-update
+
+sudo apt -y update
+sudo apt -y full-upgrade
 
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
@@ -72,7 +75,10 @@ figlet "remove"     && sudo apt-get -y autoremove
 figlet "autoclean"
 sudo apt-get -y autoclean
 sudo apt-get -y clean
+sudo apt -y autoremove
+sudo apt -y autoclean
 sudo dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt-get -y purge
+sudo apt -y -f install
 sudo updatedb
 figlet "done"
 }
@@ -85,6 +91,7 @@ figlet "done"
 
 figlet "add key's"
 
+sudo add-apt-repository -y ppa:oibaf/graphics-drivers
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
 sudo add-apt-repository -y ppa:plushuang-tw/uget-stable
@@ -134,7 +141,7 @@ sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git 
 sudo apt-get -y install language-pack-en language-pack-ru
 sudo apt-get -y install android-tools-adb android-tools-fastboot bluetooth
 sudo apt-get -y install libfuse-dev android-tools-adb
-sudo apt-get -y install ssmtp whois
+sudo apt-get -y install ssmtp whois zram-config
 sudo apt-get -y install gtk-redshift
 sudo apt-get -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 #
@@ -146,7 +153,8 @@ sudo apt-get -y install haveged molly-guard ncdu openssh-server htop powertop ug
 #sudo apt-get -y install caffeine
 #
 sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
-sudo apt-get -y install quiterss elinks
+sudo apt     -y install zip unzip p7zip p7zip-rar rar unrar
+sudo apt-get -y install quiterss elinks liferea
 sudo apt-get -y install keepassx
 sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt-get -y install ubuntu-restricted-extras 
@@ -183,7 +191,7 @@ sudo apt-get -y install wine
 sudo apt-get -y install hardinfo
 sudo apt-get -y install gtk-recordmydesktop
 sudo apt-get -y install audacity
-sudo apt-get -y install gparted
+sudo apt-get -y install gparted gnome-disk-utility
 sudo apt-get -y install ntfs-config
 sudo apt-get -y install systemd-ui
 
@@ -193,6 +201,8 @@ sudo apt-get -y install ttf-liberation
 sudo apt-get -y install fonts-elementary-core fonts-droid-fallback
 
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
+
+sudo apt --purge remove -y plank
 sudo apt install -y --reinstall plank
 
 # =========================================================
@@ -203,6 +213,8 @@ rm -rf /var/cache/apt/archives
 
 upkeyz
 sysup
+
+notify-send -i utilities-terminal brj.done "All tasks ok successfully! ;-)"
 
 # =========================================================
 # the end
