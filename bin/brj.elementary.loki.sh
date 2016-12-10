@@ -91,6 +91,7 @@ figlet "done"
 
 figlet "add key's"
 
+sudo add-apt-repository -y ppa:yunnxx/elementary
 sudo add-apt-repository -y ppa:oibaf/graphics-drivers
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
@@ -194,6 +195,7 @@ sudo apt-get -y install audacity
 sudo apt-get -y install gparted gnome-disk-utility
 sudo apt-get -y install ntfs-config
 sudo apt-get -y install systemd-ui
+sudo apt-get -y install elementary-indicator-places
 
 sudo apt-get -y install xfonts-terminus console-terminus
 sudo apt-get -y install ttf-dejavu
