@@ -122,6 +122,8 @@ echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.lis
 echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 
+echo 'deb https://dl.bintray.com/resin-io/debian stable etcher' > /etc/apt/sources.list.d/etcher.list
+
 # =========================================================
 # begin up keys + ppa
 # =========================================================
@@ -203,6 +205,7 @@ sudo apt-get -y install ttf-liberation
 sudo apt-get -y install fonts-elementary-core fonts-droid-fallback
 
 sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
+sudo apt-get -y install --allow-unauthenticated etcher-electron
 
 sudo apt --purge remove -y plank
 sudo apt install -y --reinstall plank
