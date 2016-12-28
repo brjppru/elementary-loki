@@ -25,7 +25,7 @@ fi
 
 beroot
 
-sudo apt-key -y net-update
+sudo apt-key net-update
 
 sudo apt -y update
 sudo apt -y full-upgrade
@@ -33,25 +33,25 @@ sudo apt -y full-upgrade
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 
-sudo apt-get -y update
+sudo apt -y update
 
-sudo apt-get -y install apt-transport-https ca-certificates figlet dpkg bleachbit deborphan dconf-editor
-sudo apt-get -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
+sudo apt -y install apt-transport-https ca-certificates figlet dpkg deborphan dconf-editor
+sudo apt -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
 
 # =========================================================
 # nuke it!
 # =========================================================
 
-sudo apt-get -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
-sudo apt-get -y purge activity-log-manager-common activity-log-manager-control-center zeitgeist zeitgeist-core zeitgeist-datahub
-sudo apt-get -y purge modemmanager appcenter
-sudo apt-get -y purge sane pantheon-mail
-sudo apt-get -y purge switchboard-plug-parental-controls
-sudo apt-get -y purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease elementaryos-report-problem-dockitem 
-sudo apt-get -y purge evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts 
-sudo apt-get -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0 
-sudo apt-get -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport 
-sudo apt-get -y purge python3-problem-report switchboard-plug-parental-controls
+sudo apt -y purge apparmor apparmor-utils noise pantheon-photos* audience evolution-data-server
+sudo apt -y purge activity-log-manager-common activity-log-manager-control-center zeitgeist zeitgeist-core zeitgeist-datahub
+sudo apt -y purge modemmanager appcenter
+sudo apt -y purge sane pantheon-mail
+sudo apt -y purge switchboard-plug-parental-controls
+sudo apt -y purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease elementaryos-report-problem-dockitem
+sudo apt -y purge evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts
+sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0
+sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport
+sudo apt -y purge python3-problem-report switchboard-plug-parental-controls
 
 # =========================================================
 # upkeys
@@ -68,21 +68,21 @@ sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude upd
 
 sysup() {
 
-figlet "update"     && sudo apt-get -y update
-figlet "dist-up"    && sudo apt-get -y dist-upgrade
-figlet "force deps" && sudo apt-get -y -f install
-figlet "remove"     && sudo apt-get -y autoremove
+figlet "update"
+sudo apt -y update
+figlet "dist-up"
+sudo apt -y dist-upgrade
+figlet "force install"
+sudo apt -y -f install
 figlet "autoclean"
-sudo apt-get -y autoclean
-sudo apt-get -y clean
 sudo apt -y autoremove
 sudo apt -y autoclean
-sudo dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt-get -y purge
-sudo apt -y -f install
+sudo apt -y clean
+sudo dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt -y purge
+figlet "updatedb"
 sudo updatedb
 figlet "done"
 }
-
 
 # =========================================================
 # add repos
@@ -111,18 +111,11 @@ sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 sudo add-apt-repository -y ppa:quiterss/quiterss
 sudo add-apt-repository -y ppa:ricotz/docky
 
-# sleeping 
-#sudo apt-add-repository -y ppa:nathandyer/vocal-daily
-#sudo add-apt-repository -y ppa:me-davidsansome/clementine
-#sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
-
 # no ppa repos
-echo 'deb http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
+echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 #
-echo 'deb http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
-echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
-
-#echo 'deb https://dl.bintray.com/resin-io/debian stable etcher' > /etc/apt/sources.list.d/etcher.list
+echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
+echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 
 # =========================================================
 # begin up keys + ppa
@@ -130,6 +123,7 @@ echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /et
 
 upkeyz
 sysup
+upkeyz
 
 # =========================================================
 # begin install
@@ -138,74 +132,73 @@ sysup
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
 #
-sudo apt-get -y install tataranovich-keyring
+sudo apt -y install tataranovich-keyring
 #
-sudo apt-get -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet lnav xkbset
-sudo apt-get -y install language-pack-en language-pack-ru
-sudo apt-get -y install android-tools-adb android-tools-fastboot bluetooth
-sudo apt-get -y install libfuse-dev android-tools-adb
-sudo apt-get -y install ssmtp whois zram-config
-sudo apt-get -y install gtk-redshift
-sudo apt-get -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
+sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet lnav xkbset
+sudo apt -y install language-pack-en language-pack-ru
+sudo apt -y install android-tools-adb android-tools-fastboot bluetooth
+sudo apt -y install libfuse-dev android-tools-adb
+sudo apt -y install ssmtp whois zram-config
+sudo apt -y install gtk-redshift
+sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
+
 #
 # install my own
 #
-#sudo apt-get -y install remmina remmina-plugin-rdp
-#sudo apt-get -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
-#sudo apt-get -y install fluxgui
-#sudo apt-get -y install caffeine
+#sudo apt -y install remmina remmina-plugin-rdp
+#sudo apt -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
+#sudo apt -y install fluxgui
+#sudo apt -y install caffeine
 #
-sudo apt-get -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
-sudo apt     -y install zip unzip p7zip p7zip-rar rar unrar
-sudo apt-get -y install quiterss elinks liferea
-sudo apt-get -y install keepassx
-sudo apt-get -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
-sudo apt-get -y install ubuntu-restricted-extras 
-sudo apt-get -y install ffmpeg x264 libdvdread4 lame
-sudo apt-get -y install vlc browser-plugin-vlc
-sudo apt-get -y install mypaint viewnior
-sudo apt-get -y install elementary-wallpapers-extra
-sudo apt-get -y install comixcursors-righthanded-opaque comixcursors-righthanded
-sudo apt-get -y install transmission minissdpd natpmp-utils
-sudo apt-get -y install telegram
-sudo apt-get -y install tshark iftop
-sudo apt-get -y install putty
-sudo apt-get -y install homebank
-sudo apt-get -y install xournal
-sudo apt-get -y install elementary-tweaks
-sudo apt-get -y install doublecmd-gtk
-sudo apt-get -y install freerdp
-sudo apt-get -y install tlp tlp-rdw
-sudo apt-get -y install sublime-text
-sudo apt-get -y install glipper xclip xsel
-sudo apt-get -y install pushbullet-indicator
-sudo apt-get -y install lame
-sudo apt-get -y install sqlite3
-sudo apt-get -y install torbrowser-launcher
-sudo apt-get -y install smartmontools ethtool qt4-qtconfig dconf-tools
-sudo apt-get -y install xserver-xorg-video-intel
-sudo apt-get -y install audacious audacious-plugins
-sudo apt-get -y install thunderbird
-sudo apt-get -y install flashplugin-installer pepperflashplugin-nonfree
-sudo apt-get -y install linphone
-sudo apt-get -y install corebird
-sudo apt-get -y install dosbox
-sudo apt-get -y install wine
-sudo apt-get -y install hardinfo
-sudo apt-get -y install gtk-recordmydesktop
-sudo apt-get -y install audacity
-sudo apt-get -y install gparted gnome-disk-utility
-sudo apt-get -y install ntfs-config
-sudo apt-get -y install systemd-ui
-sudo apt-get -y install elementary-indicator-places
+sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
+sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
+#sudo apt -y install quiterss elinks liferea
+sudo apt -y install keepassx
+sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
+sudo apt -y install ubuntu-restricted-extras
+sudo apt -y install ffmpeg x264 libdvdread4 lame
+sudo apt -y install vlc browser-plugin-vlc
+sudo apt -y install mypaint viewnior
+sudo apt -y install elementary-wallpapers-extra
+sudo apt -y install comixcursors-righthanded-opaque comixcursors-righthanded
+sudo apt -y install transmission minissdpd natpmp-utils
+sudo apt -y install telegram
+sudo apt -y install tshark iftop
+sudo apt -y install putty
+sudo apt -y install homebank
+sudo apt -y install xournal
+sudo apt -y install elementary-tweaks
+#sudo apt -y install doublecmd-gtk
+sudo apt -y install freerdp
+sudo apt -y install tlp tlp-rdw
+sudo apt -y install sublime-text
+sudo apt -y install glipper xclip xsel
+sudo apt -y install pushbullet-indicator
+sudo apt -y install lame
+sudo apt -y install sqlite3
+sudo apt -y install torbrowser-launcher
+sudo apt -y install smartmontools ethtool qt4-qtconfig dconf-tools
+sudo apt -y install xserver-xorg-video-intel
+sudo apt -y install audacious audacious-plugins
+sudo apt -y install thunderbird
+sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
+sudo apt -y install linphone
+sudo apt -y install corebird
+sudo apt -y install dosbox
+#sudo apt -y install wine
+sudo apt -y install hardinfo
+sudo apt -y install gtk-recordmydesktop
+sudo apt -y install audacity
+sudo apt -y install gparted gnome-disk-utility
+sudo apt -y install ntfs-config
+sudo apt -y install systemd-ui
+sudo apt -y install elementary-indicator-places
+sudo apt -y install google-chrome-stable mc
 
-sudo apt-get -y install xfonts-terminus console-terminus
-sudo apt-get -y install ttf-dejavu
-sudo apt-get -y install ttf-liberation
-sudo apt-get -y install fonts-elementary-core fonts-droid-fallback
-
-sudo apt-get -y install --allow-unauthenticated google-chrome-stable mc
-#sudo apt-get -y install --allow-unauthenticated etcher-electron
+sudo apt -y install xfonts-terminus console-terminus
+sudo apt -y install ttf-dejavu
+sudo apt -y install ttf-liberation
+sudo apt -y install fonts-elementary-core fonts-droid-fallback
 
 sudo apt --purge remove -y plank
 sudo apt install -y --reinstall plank
