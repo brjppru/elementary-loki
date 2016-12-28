@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exit 0
+
 ### Change style indicator keyboard
 sudo mcedit /usr/share/themes/elementary/gtk-3.0/apps.css +308
 

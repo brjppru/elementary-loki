@@ -1,14 +1,16 @@
 #!/bin/sh
 
-# bolgenos for elementaryos-0.4-stable-amd64.20160921.iso
-
-# =========================================================
-# begin up keys + ppa
-# =========================================================
-#
-# the brj elementary bolgenos script ;-)
+# this is the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
 #
+# bolgenos for elementaryos-0.4-stable-amd64.20160921.iso
+# do not connect to internet and download updates
+
+
+# =========================================================
+# beroot
+# =========================================================
+
 
 beroot() {
 
@@ -35,10 +37,13 @@ sudo update-rc.d -f apparmor remove
 
 sudo apt -y update
 
-sudo apt -y install apt-transport-https ca-certificates figlet dpkg deborphan dconf-editor
+# =========================================================
+# install needs
+# =========================================================
+
+sudo apt -y install apt-transport-https ca-certificates figlet dpkg deborphan dconf-editor python-gpgme
 sudo apt -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
-sudo apt -y install software-properties-common synaptic apt-xapian-index gdebi dconf-editor gedit
-sudo apt -y install gnome-system-monitor caffeine
+sudo apt -y install synaptic apt-xapian-index gdebi dconf-editor gedit
 
 # =========================================================
 # nuke it!
@@ -49,14 +54,15 @@ sudo apt -y purge activity-log-manager-common activity-log-manager-control-cente
 sudo apt -y purge modemmanager appcenter
 sudo apt -y purge sane pantheon-mail
 sudo apt -y purge switchboard-plug-parental-controls
-sudo apt -y purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease elementaryos-report-problem-dockitem
+sudo apt -y purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease
+sudo apt --purge remove -y dropbox* elementaryos-report-problem-dockitem
 sudo apt -y purge evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts
-sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0
-sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport
-sudo apt -y purge python3-problem-report switchboard-plug-parental-controls
+sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth
+sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm
+sudo apt -y purge python3-problem-report switchboard-plug-parental-controls libaccounts-glib0 python3-apport
 
 # =========================================================
-# fake locale
+# nuked locale
 # =========================================================
 
 sudo apt -y purge language-pack*
@@ -114,14 +120,15 @@ sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
-#sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
-sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
-#sudo add-apt-repository -y ppa:quiterss/quiterss
 sudo add-apt-repository -y ppa:ricotz/docky
 sudo add-apt-repository -y ppa:varlesh-l/loki
+
+#sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+#sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
+#sudo add-apt-repository -y ppa:quiterss/quiterss
 
 # no ppa repos
 echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
@@ -152,40 +159,40 @@ sudo apt -y install ssmtp whois zram-config
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
-# replank
-
+# replace plank plank
 sudo apt --purge remove -y plank
 sudo apt install -y --reinstall plank
-
 sudo apt -y install sni-qt hardcode-tray
 
 #
 # install my own
 #
+#sudo apt -y install wine
+#sudo apt -y install elementary-indicator-places
 #sudo apt -y install remmina remmina-plugin-rdp
+#sudo apt -y install doublecmd-gtk
 #sudo apt -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 #sudo apt -y install fluxgui
-#sudo apt -y install caffeine
+#sudo apt -y install quiterss elinks liferea
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
-#quiterss elinks liferea
+sudo apt -y install gnome-system-monitor caffeine
 sudo apt -y install keepassx
-sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
+sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer 
+sudo apt -y install libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt -y install ubuntu-restricted-extras
 sudo apt -y install ffmpeg x264 libdvdread4 lame
 sudo apt -y install vlc browser-plugin-vlc
 sudo apt -y install mypaint viewnior
-sudo apt -y install elementary-wallpapers-extra
-sudo apt -y install comixcursors-righthanded-opaque comixcursors-righthanded
+sudo apt -y install elementary-wallpapers-extra comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt -y install transmission minissdpd natpmp-utils
 sudo apt -y install telegram
 sudo apt -y install tshark iftop
-sudo apt -y install putty
+sudo apt -y install putty git
 sudo apt -y install homebank
 sudo apt -y install xournal
 sudo apt -y install elementary-tweaks
-#sudo apt -y install doublecmd-gtk
 sudo apt -y install freerdp
 sudo apt -y install tlp tlp-rdw
 sudo apt -y install sublime-text
@@ -202,18 +209,14 @@ sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone
 sudo apt -y install corebird
 sudo apt -y install dosbox
-#sudo apt -y install wine
 sudo apt -y install hardinfo
 sudo apt -y install gtk-recordmydesktop
 sudo apt -y install audacity
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
-sudo apt -y install ntfs-config
+sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
-#sudo apt -y install elementary-indicator-places
 sudo apt -y install google-chrome-stable mc
-sudo apt -y install indicator-kdeconnect
-sudo apt -y install libqt4-svg qt5ct
-
+sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 
 # =========================================================
