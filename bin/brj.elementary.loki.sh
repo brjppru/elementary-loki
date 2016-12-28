@@ -37,6 +37,8 @@ sudo apt -y update
 
 sudo apt -y install apt-transport-https ca-certificates figlet dpkg deborphan dconf-editor
 sudo apt -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
+sudo apt -y install software-properties-common synaptic apt-xapian-index gdebi dconf-editor gedit
+sudo apt -y install gnome-system-monitor caffeine
 
 # =========================================================
 # nuke it!
@@ -52,6 +54,8 @@ sudo apt -y purge evolution-data-server-google2 evolution-data-server-outlook ev
 sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0
 sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport
 sudo apt -y purge python3-problem-report switchboard-plug-parental-controls
+sudo apt -y purge language-pack*
+sudo apt -y install language-pack-en language-pack-gnome-en language-pack-gnome-en-base language-pack-gnome-ru language-pack-ru-base
 
 # =========================================================
 # upkeys
@@ -73,7 +77,7 @@ sudo apt -y update
 figlet "dist-up"
 sudo apt -y dist-upgrade
 figlet "force install"
-sudo apt -y -f install
+sudo apt-get -y -f install
 figlet "autoclean"
 sudo apt -y autoremove
 sudo apt -y autoclean
@@ -91,6 +95,8 @@ figlet "done"
 
 figlet "add key's"
 
+sudo add-apt-repository -y ppa:andreas-angerer89/sni-qt-patched
+sudo add-apt-repository -y ppa:varlesh-l/indicator-kdeconnect
 sudo add-apt-repository -y ppa:yunnxx/elementary
 sudo add-apt-repository -y ppa:oibaf/graphics-drivers
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
@@ -110,10 +116,10 @@ sudo add-apt-repository -y ppa:wireshark-dev/stable
 sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 sudo add-apt-repository -y ppa:quiterss/quiterss
 sudo add-apt-repository -y ppa:ricotz/docky
+sudo add-apt-repository -y ppa:varlesh-l/loki
 
 # no ppa repos
 echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
-#
 echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 
@@ -135,7 +141,6 @@ echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set
 sudo apt -y install tataranovich-keyring
 #
 sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet lnav xkbset
-sudo apt -y install language-pack-en language-pack-ru
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth
 sudo apt -y install libfuse-dev android-tools-adb
 sudo apt -y install ssmtp whois zram-config
@@ -152,7 +157,8 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
-#sudo apt -y install quiterss elinks liferea
+sudo apt -y install elinks
+#quiterss elinks liferea
 sudo apt -y install keepassx
 sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt -y install ubuntu-restricted-extras
@@ -194,6 +200,7 @@ sudo apt -y install ntfs-config
 sudo apt -y install systemd-ui
 sudo apt -y install elementary-indicator-places
 sudo apt -y install google-chrome-stable mc
+sudo apt -y install indicator-kdeconnect
 
 sudo apt -y install xfonts-terminus console-terminus
 sudo apt -y install ttf-dejavu
@@ -202,6 +209,8 @@ sudo apt -y install fonts-elementary-core fonts-droid-fallback
 
 sudo apt --purge remove -y plank
 sudo apt install -y --reinstall plank
+
+sudo apt -y install sni-qt hardcode-tray
 
 # =========================================================
 # nuke archives
