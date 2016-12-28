@@ -43,7 +43,7 @@ sudo apt -y update
 
 sudo apt -y install apt-transport-https ca-certificates figlet dpkg deborphan dconf-editor python-gpgme
 sudo apt -y install software-properties-common software-properties-gtk debconf-utils aptitude ppa-purge bzip2 gdebi
-sudo apt -y install synaptic apt-xapian-index gdebi dconf-editor gedit
+sudo apt -y install synaptic gdebi dconf-editor
 
 # =========================================================
 # nuke it!
@@ -55,7 +55,8 @@ sudo apt -y purge modemmanager appcenter
 sudo apt -y purge sane pantheon-mail
 sudo apt -y purge switchboard-plug-parental-controls
 sudo apt -y purge apport apport-gtk apport-hooks-elementary apport-symptoms elementary-os-prerelease
-sudo apt --purge remove -y dropbox* elementaryos-report-problem-dockitem
+#sudo apt -y purge dropbox*
+sudo apt -y purge elementaryos-report-problem-dockitem
 sudo apt -y purge evolution-data-server-google2 evolution-data-server-outlook evolution-data-server-pantheon-online-accounts
 sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth
 sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm
@@ -160,7 +161,7 @@ sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
 # replace plank plank
-sudo apt --purge remove -y plank
+#sudo apt --purge remove -y plank
 sudo apt install -y --reinstall plank
 sudo apt -y install sni-qt hardcode-tray
 
@@ -179,7 +180,7 @@ sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutil
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
 sudo apt -y install gnome-system-monitor caffeine
 sudo apt -y install keepassx
-sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer 
+sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer
 sudo apt -y install libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt -y install ubuntu-restricted-extras
 sudo apt -y install ffmpeg x264 libdvdread4 lame
@@ -218,6 +219,7 @@ sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
 sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
+sudo apt -y install virt-manager
 
 # =========================================================
 # nuke archives
