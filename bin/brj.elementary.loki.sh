@@ -54,6 +54,10 @@ sudo apt -y purge evolution-data-server-google2 evolution-data-server-outlook ev
 sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsignond-plugin-lastfm gsignond-plugin-oauth libaccounts-glib0
 sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm python3-apport
 sudo apt -y purge python3-problem-report switchboard-plug-parental-controls
+
+# =========================================================
+# fake locale
+# =========================================================
 sudo apt -y purge language-pack*
 sudo apt -y install language-pack-en language-pack-gnome-en language-pack-gnome-en-base language-pack-gnome-ru language-pack-ru-base
 
@@ -147,6 +151,14 @@ sudo apt -y install ssmtp whois zram-config
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
+# replank
+
+sudo apt --purge remove -y plank
+sudo apt install -y --reinstall plank
+
+sudo apt -y install sni-qt hardcode-tray
+
+
 #
 # install my own
 #
@@ -195,7 +207,7 @@ sudo apt -y install dosbox
 sudo apt -y install hardinfo
 sudo apt -y install gtk-recordmydesktop
 sudo apt -y install audacity
-sudo apt -y install gparted gnome-disk-utility
+sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install ntfs-config
 sudo apt -y install systemd-ui
 sudo apt -y install elementary-indicator-places
@@ -207,10 +219,6 @@ sudo apt -y install ttf-dejavu
 sudo apt -y install ttf-liberation
 sudo apt -y install fonts-elementary-core fonts-droid-fallback
 
-sudo apt --purge remove -y plank
-sudo apt install -y --reinstall plank
-
-sudo apt -y install sni-qt hardcode-tray
 
 # =========================================================
 # nuke archives
