@@ -58,6 +58,7 @@ sudo apt -y purge python3-problem-report switchboard-plug-parental-controls
 # =========================================================
 # fake locale
 # =========================================================
+
 sudo apt -y purge language-pack*
 sudo apt -y install language-pack-en language-pack-gnome-en language-pack-gnome-en-base language-pack-gnome-ru language-pack-ru-base
 
@@ -113,12 +114,12 @@ sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:transmissionbt/ppa
 sudo add-apt-repository -y ppa:videolan/stable-daily
-sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+#sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
 sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
-sudo add-apt-repository -y ppa:quiterss/quiterss
+#sudo add-apt-repository -y ppa:quiterss/quiterss
 sudo add-apt-repository -y ppa:ricotz/docky
 sudo add-apt-repository -y ppa:varlesh-l/loki
 
@@ -158,7 +159,6 @@ sudo apt install -y --reinstall plank
 
 sudo apt -y install sni-qt hardcode-tray
 
-
 #
 # install my own
 #
@@ -169,7 +169,6 @@ sudo apt -y install sni-qt hardcode-tray
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
-sudo apt -y install elinks
 #quiterss elinks liferea
 sudo apt -y install keepassx
 sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
@@ -210,15 +209,12 @@ sudo apt -y install audacity
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install ntfs-config
 sudo apt -y install systemd-ui
-sudo apt -y install elementary-indicator-places
+#sudo apt -y install elementary-indicator-places
 sudo apt -y install google-chrome-stable mc
 sudo apt -y install indicator-kdeconnect
+sudo apt -y install libqt4-svg qt5ct
 
-sudo apt -y install xfonts-terminus console-terminus
-sudo apt -y install ttf-dejavu
-sudo apt -y install ttf-liberation
-sudo apt -y install fonts-elementary-core fonts-droid-fallback
-
+sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 
 # =========================================================
 # nuke archives
