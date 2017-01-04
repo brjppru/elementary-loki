@@ -8,13 +8,20 @@ killall wingpanel
 gsettings set org.pantheon.desktop.gala.animations enable-animations false
 
 ### Double-click on Files
-gsettings set org.pantheon.files.preferences single click false
+gsettings set org.pantheon.files.preferences single-click false
 
 ### Disable dynamic workspaces
 gsettings set org.pantheon.desktop.gala.behavior dynamic-workspaces false
 
 ### Disable transparency on wingpanel
 #gsettings set org.pantheon.desktop.wingpanel use-transparency false
+
+sudo add-apt-repository ppa:andreas-angerer89/sni-qt-patched
+sudo apt update
+sudo apt install sni-qt hardcode-tray
+hardcode-tray -ug
+hardcode-tray -s 24 -ct Inkscape
+
 
 ### Fix Qt4/Qt5-apps
 sudo apt install libqt4-svg qt5ct
