@@ -185,7 +185,7 @@ sudo apt -y install sni-qt hardcode-tray
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
 sudo apt -y install gnome-system-monitor caffeine
-sudo apt -y install keepassx
+sudo apt -y install keepassx gmrun
 sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer
 sudo apt -y install libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt -y install ubuntu-restricted-extras ffmpeg x264 libdvdread4 lame vlc browser-plugin-vlc
