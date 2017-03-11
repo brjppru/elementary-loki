@@ -50,8 +50,7 @@ beroot
 
 sudo apt -y purge language-pack*
 sudo apt -y install language-pack-en language-pack-gnome-en language-pack-gnome-en-base
-
-#sudo apt -y install language-pack-gnome-ru language-pack-ru-base
+sudo apt -y install language-pack-gnome-ru language-pack-ru-base
 
 # =========================================================
 # begin up keys + ppa
@@ -115,7 +114,7 @@ figlet "add key's"
 
 sudo add-apt-repository -y ppa:andreas-angerer89/sni-qt-patched
 sudo add-apt-repository -y ppa:varlesh-l/indicator-kdeconnect
-#isudo add-apt-repository -y ppa:yunnxx/elementary
+#sudo add-apt-repository -y ppa:yunnxx/elementary
 #sudo add-apt-repository -y ppa:oibaf/graphics-drivers
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:atareao/pushbullet
@@ -169,7 +168,7 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 # replace plank plank
 #sudo apt --purge remove -y plank
 #sudo apt install -y --reinstall plank
-sudo apt -y install sni-qt hardcode-tray
+#sudo apt -y install sni-qt hardcode-tray
 
 #
 # install my own
