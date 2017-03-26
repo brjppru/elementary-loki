@@ -129,6 +129,7 @@ sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:wireshark-dev/stable
+sudo add-apt-repository -y ppa:papirus/papirus
 #sudo add-apt-repository -y ppa:ricotz/docky
 #sudo add-apt-repository -y ppa:varlesh-l/loki
 
@@ -223,6 +224,7 @@ sudo apt -y install google-chrome-stable mc
 sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 sudo apt -y install virt-manager netcat
+sudo apt -y install papirus-icon-theme
 
 # =========================================================
 # nuke archives
