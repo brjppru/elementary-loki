@@ -112,12 +112,12 @@ figlet "done"
 
 figlet "add key's"
 
-sudo add-apt-repository -y ppa:andreas-angerer89/sni-qt-patched
-sudo add-apt-repository -y ppa:varlesh-l/indicator-kdeconnect
+#sudo add-apt-repository -y ppa:andreas-angerer89/sni-qt-patched
+#sudo add-apt-repository -y ppa:varlesh-l/indicator-kdeconnect
 #sudo add-apt-repository -y ppa:yunnxx/elementary
 #sudo add-apt-repository -y ppa:oibaf/graphics-drivers
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
-sudo add-apt-repository -y ppa:atareao/pushbullet
+#sudo add-apt-repository -y ppa:atareao/pushbullet
 #sudo add-apt-repository -y ppa:plushuang-tw/uget-stable
 #sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:ubuntuhandbook1/corebird
@@ -141,6 +141,7 @@ sudo add-apt-repository -y ppa:papirus/papirus
 echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
+echo 'deb [trusted=yes arch=amd64] https://repo.skype.com/deb stable main' > /etc/apt/sources.list.d/skype-stable.list
 
 # =========================================================
 # begin up keys + ppa
@@ -198,11 +199,11 @@ sudo apt -y install putty git
 sudo apt -y install homebank
 sudo apt -y install xournal
 sudo apt -y install elementary-tweaks
-sudo apt -y install freerdp
+sudo apt -y install freerdp rdesktop
 sudo apt -y install tlp tlp-rdw
 sudo apt -y install sublime-text
 #sudo apt -y install glipper xclip xsel
-sudo apt -y install pushbullet-indicator
+#sudo apt -y install pushbullet-indicator
 sudo apt -y install lame
 sudo apt -y install sqlite3
 sudo apt -y install torbrowser-launcher
@@ -221,7 +222,7 @@ sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
-sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
+#sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 sudo apt -y install virt-manager netcat
 sudo apt -y install papirus-icon-theme
