@@ -215,7 +215,6 @@ sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone
 sudo apt -y install corebird
-sudo apt -y install dosbox
 #sudo apt -y install hardinfo
 #sudo apt -y install gtk-recordmydesktop
 #sudo apt -y install audacity
@@ -227,6 +226,10 @@ sudo apt -y install google-chrome-stable mc
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 sudo apt -y install virt-manager netcat
 sudo apt -y install papirus-icon-theme
+
+# games
+sudo apt -y install aisleriot gnome-cards-data pysolfc
+sudo apt -y install dosbox
 
 # =========================================================
 # nuke archives
