@@ -187,7 +187,7 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
 sudo apt -y install gnome-system-monitor caffeine
-sudo apt -y install keepassx gmrun
+sudo apt -y install keepassx gmrun xdotool keepass2
 sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer
 sudo apt -y install libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt -y install ubuntu-restricted-extras ffmpeg x264 libdvdread4 lame vlc browser-plugin-vlc
@@ -224,12 +224,12 @@ sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
 #sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
-sudo apt -y install virt-manager netcat
+#sudo apt -y install virt-manager netcat
 sudo apt -y install papirus-icon-theme
 
 # games
-sudo apt -y install aisleriot gnome-cards-data pysolfc
-sudo apt -y install dosbox
+#sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048
+#sudo apt -y install dosbox
 
 # =========================================================
 # nuke archives
