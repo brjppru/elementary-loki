@@ -189,7 +189,7 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks
-sudo apt -y install gnome-system-monitor caffeine netcat
+sudo apt -y install gnome-system-monitor caffeine netcat sshfs
 sudo apt -y install keepassx gmrun xdotool keepass2
 sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer
 sudo apt -y install libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
