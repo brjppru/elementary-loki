@@ -135,6 +135,7 @@ sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:papirus/papirus
+sudo add-apt-repository -y ppa:mixxx/mixxx
 
 # =========================================================
 # no ppa repos
@@ -161,8 +162,11 @@ echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set
 #
 sudo apt -y install tataranovich-keyring
 #
-sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline git figlet lnav xkbset
+sudo apt install -y giggle git gitg
+sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline figlet lnav xkbset
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-dev android-tools-adb
+sudo apt -y install android-tools-adb android-tools-fastboot android-tools-fsutils gphoto2 jmtpfs mtpfs
+
 sudo apt -y install ssmtp whois zram-config
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
@@ -185,7 +189,9 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #sudo apt -y install gtk-recordmydesktop
 #sudo apt -y install audacity
 #sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
+#
 #sudo apt -y install virt-manager netcat
+#sudo apt -y install -y gnome-boxes
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks genisoimage
@@ -209,22 +215,30 @@ sudo apt -y install sublime-text
 sudo apt -y install lame
 sudo apt -y install sqlite3
 sudo apt -y install torbrowser-launcher
+#
 sudo apt -y install audacious audacious-plugins
+sudo apt -y install easytag
+#
 sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone
 sudo apt -y install corebird
+#
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
+sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
+#
 sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 sudo apt -y install papirus-icon-theme
+sudo apt -y install youtube-dl
+sudo apt -y install mixxx
 
 # =========================================================
 # games
 # =========================================================
-#sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox
+#sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku
 
 # =========================================================
 # nuke archives
