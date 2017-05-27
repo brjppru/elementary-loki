@@ -143,6 +143,7 @@ sudo add-apt-repository -y ppa:mixxx/mixxx
 echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
+echo 'deb [trusted=yes https://deb.opera.com/opera-stable/ stable non-free' > /etc/apt/sources.list.d/opera.list
 #echo 'deb [trusted=yes arch=amd64] https://repo.skype.com/deb stable main' > /etc/apt/sources.list.d/skype-stable.list
 
 # =========================================================
@@ -230,6 +231,7 @@ sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-
 sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
+sudo apt -y install opera-stable
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
 sudo apt -y install papirus-icon-theme
 sudo apt -y install youtube-dl
