@@ -163,12 +163,13 @@ echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set
 #
 sudo apt -y install tataranovich-keyring
 #
-sudo apt install -y giggle git gitg
+sudo apt -y install giggle git gitg
 sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline figlet lnav xkbset
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-dev android-tools-adb
 sudo apt -y install android-tools-adb android-tools-fastboot android-tools-fsutils gphoto2 jmtpfs mtpfs
 
-sudo apt -y install ssmtp whois zram-config
+sudo apt -y install ssmtp whois 
+#zram-config
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
@@ -181,7 +182,7 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #sudo apt -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
 #sudo apt -y install fluxgui
 #sudo apt -y install quiterss elinks liferea
-#sudo apt -y install mypaint 
+#sudo apt -y install mypaint
 #sudo apt -y install glipper xclip xsel
 #sudo apt -y install pushbullet-indicator
 #sudo apt -y install smartmontools ethtool qt4-qtconfig dconf-tools
@@ -225,8 +226,9 @@ sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone
 sudo apt -y install corebird
 #
-sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
-sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
+sudo apt -y install gparted gnome-disk-utility usb-creator-gtk unetbootin
+#sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
+sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
 #
 sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
