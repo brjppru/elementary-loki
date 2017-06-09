@@ -167,8 +167,7 @@ sudo apt -y install giggle git gitg
 sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline figlet lnav xkbset
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-dev android-tools-adb
 sudo apt -y install android-tools-adb android-tools-fastboot android-tools-fsutils gphoto2 jmtpfs mtpfs
-
-sudo apt -y install ssmtp whois 
+sudo apt -y install ssmtp whois
 #zram-config
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
@@ -202,7 +201,7 @@ sudo apt -y install keepassx gmrun xdotool keepass2
 sudo apt -y install libreoffice libreoffice-gtk libreoffice-pdfimport libreoffice-avmedia-backend-gstreamer
 sudo apt -y install libreoffice-style-sifr libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt -y install ubuntu-restricted-extras ffmpeg x264 libdvdread4 lame vlc browser-plugin-vlc
-sudo apt -y install viewnior
+sudo apt -y install viewnior qiv
 sudo apt -y install elementary-wallpapers-extra comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt -y install transmission minissdpd natpmp-utils
 sudo apt -y install telegram
