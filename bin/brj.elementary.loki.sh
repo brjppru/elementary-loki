@@ -143,7 +143,7 @@ sudo add-apt-repository -y ppa:mixxx/mixxx
 echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/apt/sources.list.d/tataranovich.list
 echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
-echo 'deb [trusted=yes https://deb.opera.com/opera-stable/ stable non-free' > /etc/apt/sources.list.d/opera.list
+echo 'deb [trusted=yes] https://deb.opera.com/opera-stable/ stable non-free' > /etc/apt/sources.list.d/opera.list
 #echo 'deb [trusted=yes arch=amd64] https://repo.skype.com/deb stable main' > /etc/apt/sources.list.d/skype-stable.list
 
 # =========================================================
@@ -158,6 +158,7 @@ upkeyz
 # begin install
 # =========================================================
 #
+echo opera-stable opera-stable/add-deb-source boolean false | debconf-set-selections
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
 #
@@ -233,7 +234,7 @@ sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
 sudo apt -y install opera-stable
-sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback
+sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
 sudo apt -y install papirus-icon-theme
 sudo apt -y install youtube-dl
 sudo apt -y install mixxx
