@@ -236,7 +236,7 @@ sudo apt -y install google-chrome-stable mc
 sudo apt -y install opera-stable
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
 sudo apt -y install papirus-icon-theme
-sudo apt -y install youtube-dl
+#sudo apt -y install youtube-dl
 sudo apt -y install mixxx
 
 # =========================================================
