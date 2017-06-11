@@ -172,12 +172,12 @@ sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline figlet l
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-dev android-tools-adb
 sudo apt -y install android-tools-adb android-tools-fastboot android-tools-fsutils gphoto2 jmtpfs mtpfs
 sudo apt -y install ssmtp whois
-#zram-config
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 
 # install my own
 #
+#zram-config
 #sudo apt -y install wine
 #sudo apt -y install elementary-indicator-places
 #sudo apt -y install remmina remmina-plugin-rdp
@@ -194,9 +194,10 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #sudo apt -y install gtk-recordmydesktop
 #sudo apt -y install audacity
 #sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
-#
 #sudo apt -y install virt-manager netcat
 #sudo apt -y install -y gnome-boxes
+#sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
+#sudo apt -y install youtube-dl
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks genisoimage
@@ -230,7 +231,6 @@ sudo apt -y install linphone linphone-plugin-g729
 sudo apt -y install corebird
 #
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk unetbootin
-#sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
 sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
 #
 sudo apt -y install ntfs-config git zsh fonts-powerline
@@ -238,8 +238,7 @@ sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
 sudo apt -y install opera-stable
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
-sudo apt -y install papirus-icon-theme
-#sudo apt -y install youtube-dl
+sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
 
 # =========================================================
