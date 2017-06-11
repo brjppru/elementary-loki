@@ -162,6 +162,9 @@ echo opera-stable opera-stable/add-deb-source boolean false | debconf-set-select
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
 #
+echo libbcg729-0	libbcg729-0/patent_compliance	boolean	true | debconf-set-selections
+echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-selections
+#
 sudo apt -y install tataranovich-keyring
 #
 sudo apt -y install giggle git gitg
@@ -223,7 +226,7 @@ sudo apt -y install easytag
 #
 sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
-sudo apt -y install linphone
+sudo apt -y install linphone linphone-plugin-g729
 sudo apt -y install corebird
 #
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk unetbootin
