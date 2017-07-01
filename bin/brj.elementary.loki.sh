@@ -136,6 +136,7 @@ sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:papirus/papirus
 sudo add-apt-repository -y ppa:mixxx/mixxx
+sudo apt-add-repository -y ppa:nasc-team/daily
 
 # =========================================================
 # no ppa repos
@@ -240,6 +241,7 @@ sudo apt -y install opera-stable
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
 sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
+sudo apt -y install nasc
 
 # =========================================================
 # games
