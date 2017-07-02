@@ -199,6 +199,7 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #sudo apt -y install -y gnome-boxes
 #sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
 #sudo apt -y install youtube-dl
+# unetbootin
 #
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks genisoimage
@@ -231,7 +232,7 @@ sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone linphone-plugin-g729
 sudo apt -y install corebird
 #
-sudo apt -y install gparted gnome-disk-utility usb-creator-gtk unetbootin
+sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
 #
 sudo apt -y install ntfs-config git zsh fonts-powerline
