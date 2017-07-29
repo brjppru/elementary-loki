@@ -243,6 +243,7 @@ sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation f
 sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
 sudo apt -y install nasc
+sudo apt -y install autocutsel tightvncserver
 
 # =========================================================
 # games
