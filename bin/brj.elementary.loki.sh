@@ -145,6 +145,7 @@ echo 'deb [trusted=yes] http://www.tataranovich.com/debian xenial main' > /etc/a
 echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /etc/apt/sources.list.d/partner.list
 echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 echo 'deb [trusted=yes] https://deb.opera.com/opera-stable/ stable non-free' > /etc/apt/sources.list.d/opera.list
+echo 'deb [trusted=yes] http://build.openvpn.net/debian/openvpn/release/2.4 xenial main' > /etc/apt/sources.list.d/openvpn-aptrepo.list
 #echo 'deb [trusted=yes arch=amd64] https://repo.skype.com/deb stable main' > /etc/apt/sources.list.d/skype-stable.list
 
 # =========================================================
@@ -231,6 +232,7 @@ sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone linphone-plugin-g729
 sudo apt -y install corebird
+sudo apt -y install network-manager-openvpn-gnome openvpn
 #
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
