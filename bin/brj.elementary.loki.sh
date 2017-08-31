@@ -223,10 +223,10 @@ sudo apt -y install tlp tlp-rdw
 sudo apt -y install sublime-text
 sudo apt -y install lame
 sudo apt -y install sqlite3
-sudo apt -y install torbrowser-launcher
+#sudo apt -y install torbrowser-launcher
 #
 sudo apt -y install audacious audacious-plugins
-sudo apt -y install easytag
+#sudo apt -y install easytag
 #
 sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
