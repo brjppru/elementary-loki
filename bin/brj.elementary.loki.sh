@@ -3,14 +3,12 @@
 # this is the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
 #
-# bolgenos for elementaryos-0.4-stable-amd64.20160921.iso
+# bolgenos for elementaryos-0.4.1-stable.20170814.iso
 # do not connect to internet and download updates
-
 
 # =========================================================
 # beroot
 # =========================================================
-
 
 beroot() {
 
@@ -137,6 +135,9 @@ sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:papirus/papirus
 sudo add-apt-repository -y ppa:mixxx/mixxx
 sudo apt-add-repository -y ppa:nasc-team/daily
+sudo add-apt-repository -y ppa:jonathonf/backports
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+
 
 # =========================================================
 # no ppa repos
