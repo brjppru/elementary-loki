@@ -232,7 +232,7 @@ sudo apt -y install audacious audacious-plugins
 sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone linphone-plugin-g729
-sudo apt -y install corebird
+sudo apt -y install corebird irssi
 sudo apt -y install network-manager-openvpn-gnome openvpn
 #
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk

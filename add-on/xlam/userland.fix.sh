@@ -1,5 +1,7 @@
 #!/bin/sh
 
+exit 0
+
 # rescect to http://mykubik.blogspot.ru/2016/12/elementary-os-loki.html
 
 ### Acceleration - disable animations
