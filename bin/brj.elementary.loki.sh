@@ -129,7 +129,7 @@ sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:transmissionbt/ppa
-sudo add-apt-repository -y ppa:videolan/stable-daily
+#sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:papirus/papirus
@@ -137,7 +137,7 @@ sudo add-apt-repository -y ppa:mixxx/mixxx
 sudo apt-add-repository -y ppa:nasc-team/daily
 sudo add-apt-repository -y ppa:jonathonf/backports
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
-
+sudo add-apt-repository -y ppa:caffeine-developers/ppa
 
 # =========================================================
 # no ppa repos
