@@ -234,7 +234,7 @@ sudo apt -y install audacious audacious-plugins
 sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone linphone-plugin-g729
-sudo apt -y install corebird irssi
+sudo apt -y install corebird
 sudo apt -y install network-manager-openvpn-gnome openvpn
 #
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
@@ -247,7 +247,7 @@ sudo apt -y install opera-stable
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
 sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
-sudo apt -y install nasc gqrcode
+sudo apt -y install nasc gqrcode vim-nox
 sudo apt -y install autocutsel tightvncserver
 
 # =========================================================
