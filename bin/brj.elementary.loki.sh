@@ -225,6 +225,7 @@ sudo apt -y install tlp tlp-rdw
 sudo apt -y install sublime-text
 sudo apt -y install lame
 sudo apt -y install sqlite3
+sudo apt -y install dia graphviz xdot
 #sudo apt -y install torbrowser-launcher
 #
 sudo apt -y install audacious audacious-plugins
