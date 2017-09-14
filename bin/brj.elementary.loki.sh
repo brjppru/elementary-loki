@@ -167,7 +167,6 @@ upkeyz
 echo opera-stable opera-stable/add-deb-source boolean false | debconf-set-selections
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections
 echo wireshark-common wireshark-common/install-setuid boolean true | debconf-set-selections
-#
 echo libbcg729-0	libbcg729-0/patent_compliance	boolean	true | debconf-set-selections
 echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-selections
 #
@@ -180,32 +179,6 @@ sudo apt -y install android-tools-adb android-tools-fastboot android-tools-fsuti
 sudo apt -y install ssmtp whois
 sudo apt -y install gtk-redshift
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
-
-# install my own
-#
-#zram-config
-#sudo apt -y install wine
-#sudo apt -y install elementary-indicator-places
-#sudo apt -y install remmina remmina-plugin-rdp
-#sudo apt -y install doublecmd-gtk
-#sudo apt -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
-#sudo apt -y install fluxgui
-#sudo apt -y install quiterss elinks liferea
-#sudo apt -y install mypaint
-#sudo apt -y install pushbullet-indicator
-#sudo apt -y install smartmontools ethtool qt4-qtconfig dconf-tools
-#sudo apt -y install xserver-xorg-video-intel
-#sudo apt -y install hardinfo
-#sudo apt -y install gtk-recordmydesktop
-#sudo apt -y install audacity
-#sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
-#sudo apt -y install virt-manager netcat
-#sudo apt -y install -y gnome-boxes
-#sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
-#sudo apt -y install youtube-dl
-#sudo apt -y install torbrowser-launcher
-#sudo apt -y install easytag
-
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks genisoimage
 sudo apt -y install gnome-system-monitor caffeine netcat sshfs
@@ -272,3 +245,30 @@ notify-send -i utilities-terminal brj.done "All tasks ok successfully! ;-)"
 # the end, the brj elementary bolgenos script ;-)
 # http://brj.pp.ru/
 #
+
+# =========================================================
+# outdated
+# =========================================================
+
+#sudo apt -y install wine zram-config
+#sudo apt -y install elementary-indicator-places
+#sudo apt -y install remmina remmina-plugin-rdp
+#sudo apt -y install doublecmd-gtk
+#sudo apt -y install vdpau-va-driver libvdpau-va-gl1 libvdpau1 vlc browser-plugin-vlc
+#sudo apt -y install fluxgui
+#sudo apt -y install quiterss elinks liferea
+#sudo apt -y install mypaint
+#sudo apt -y install pushbullet-indicator
+#sudo apt -y install smartmontools ethtool qt4-qtconfig dconf-tools
+#sudo apt -y install xserver-xorg-video-intel
+#sudo apt -y install hardinfo
+#sudo apt -y install gtk-recordmydesktop
+#sudo apt -y install audacity
+#sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
+#sudo apt -y install virt-manager netcat
+#sudo apt -y install -y gnome-boxes
+#sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
+#sudo apt -y install youtube-dl
+#sudo apt -y install torbrowser-launcher
+#sudo apt -y install easytag
+
