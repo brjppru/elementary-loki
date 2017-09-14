@@ -138,6 +138,7 @@ sudo apt-add-repository -y ppa:nasc-team/daily
 sudo add-apt-repository -y ppa:jonathonf/backports
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
 sudo add-apt-repository -y ppa:caffeine-developers/ppa
+sudo add-apt-repository -y ppa:atareao/atareao
 
 # =========================================================
 # no ppa repos
@@ -245,7 +246,7 @@ sudo apt -y install opera-stable
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
 sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
-sudo apt -y install nasc
+sudo apt -y install nasc gqrcode
 sudo apt -y install autocutsel tightvncserver
 
 # =========================================================
