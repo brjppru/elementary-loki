@@ -122,14 +122,14 @@ figlet "add key's"
 #sudo add-apt-repository -y ppa:ubuntu-wine/ppa
 #sudo add-apt-repository -y ppa:ubuntuhandbook1/apps
 #sudo add-apt-repository -y ppa:quiterss/quiterss
+#sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
+#sudo add-apt-repository -y ppa:videolan/stable-daily
 
 sudo add-apt-repository -y ppa:philip.scott/elementary-tweaks
 sudo add-apt-repository -y ppa:ubuntuhandbook1/corebird
 sudo add-apt-repository -y ppa:atareao/telegram
 sudo add-apt-repository -y ppa:libreoffice/ppa
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
 sudo add-apt-repository -y ppa:transmissionbt/ppa
-#sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo add-apt-repository -y ppa:linphone/release
 sudo add-apt-repository -y ppa:papirus/papirus
@@ -148,6 +148,8 @@ echo 'deb [trusted=yes] http://archive.canonical.com/ubuntu xenial partner' > /e
 echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' > /etc/apt/sources.list.d/google-chrome.list
 echo 'deb [trusted=yes] https://deb.opera.com/opera-stable/ stable non-free' > /etc/apt/sources.list.d/opera.list
 echo 'deb [trusted=yes] http://build.openvpn.net/debian/openvpn/release/2.4 xenial main' > /etc/apt/sources.list.d/openvpn-aptrepo.list
+echo 'deb [trusted=yes] https://download.sublimetext.com/ apt/stable/' > /etc/apt/sources.list.d/sublime-text.list
+
 #echo 'deb [trusted=yes arch=amd64] https://repo.skype.com/deb stable main' > /etc/apt/sources.list.d/skype-stable.list
 
 # =========================================================
