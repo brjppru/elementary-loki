@@ -192,7 +192,6 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #sudo apt -y install fluxgui
 #sudo apt -y install quiterss elinks liferea
 #sudo apt -y install mypaint
-#sudo apt -y install glipper xclip xsel
 #sudo apt -y install pushbullet-indicator
 #sudo apt -y install smartmontools ethtool qt4-qtconfig dconf-tools
 #sudo apt -y install xserver-xorg-video-intel
@@ -204,8 +203,9 @@ sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget p
 #sudo apt -y install -y gnome-boxes
 #sudo apt -y install btrfs-tools e2fslibs e2fsprogs dosfstools hfsutils hfsutils-tcltk f2fs-tools hfsprogs jfsutils util-linux lvm2 ntfs-3g reiser4progs reiserfsprogs xfsprogs xfsdump
 #sudo apt -y install youtube-dl
-# unetbootin
-#
+#sudo apt -y install torbrowser-launcher
+#sudo apt -y install easytag
+
 sudo apt -y install unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt -y install zip unzip p7zip p7zip-rar rar unrar elinks genisoimage
 sudo apt -y install gnome-system-monitor caffeine netcat sshfs
@@ -226,22 +226,16 @@ sudo apt -y install freerdp rdesktop
 sudo apt -y install tlp tlp-rdw
 sudo apt -y install sublime-text
 sudo apt -y install lame
-sudo apt -y install sqlite3
+sudo apt -y install sqlite3 smbclient
 sudo apt -y install dia graphviz xdot
-#sudo apt -y install torbrowser-launcher
-#
 sudo apt -y install audacious audacious-plugins
-#sudo apt -y install easytag
-#
 sudo apt -y install thunderbird thunderbird-gnome-support
 sudo apt -y install flashplugin-installer pepperflashplugin-nonfree
 sudo apt -y install linphone linphone-plugin-g729
 sudo apt -y install corebird
 sudo apt -y install network-manager-openvpn-gnome openvpn
-#
 sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
-#
 sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
 sudo apt -y install google-chrome-stable mc
@@ -250,12 +244,13 @@ sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation f
 sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
 sudo apt -y install nasc gqrcode vim-nox
-sudo apt -y install autocutsel tightvncserver
+sudo apt -y install tightvncserver
+sudo apt -y install glipper xclip xsel autocutsel
 
 # =========================================================
 # games
 # =========================================================
-#sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku
+# sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku
 
 # =========================================================
 # nuke archives
