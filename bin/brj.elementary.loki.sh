@@ -173,6 +173,7 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 sudo apt -y install tataranovich-keyring
 #
 sudo apt -y install giggle git gitg
+sudo apt -y install intel-microcode
 sudo apt -y install aptitude cowsay curl dpkg aria2 zsh fonts-powerline figlet lnav xkbset
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-dev android-tools-adb
 sudo apt -y install android-tools-adb android-tools-fastboot android-tools-fsutils gphoto2 jmtpfs mtpfs
