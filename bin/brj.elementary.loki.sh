@@ -221,6 +221,7 @@ sudo apt -y install mixxx
 sudo apt -y install nasc gqrcode vim-nox
 sudo apt -y install tightvncserver
 sudo apt -y install xclip xsel autocutsel copyq
+sudo apt -y install hardinfo
 
 # =========================================================
 # games
@@ -263,7 +264,6 @@ notify-send -i utilities-terminal brj.done "All tasks ok successfully! ;-)"
 #sudo apt -y install pushbullet-indicator
 #sudo apt -y install smartmontools ethtool qt4-qtconfig dconf-tools
 #sudo apt -y install xserver-xorg-video-intel
-#sudo apt -y install hardinfo
 #sudo apt -y install gtk-recordmydesktop
 #sudo apt -y install audacity
 #sudo apt -y install indicator-kdeconnect libqt4-svg qt5ct
