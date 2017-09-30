@@ -150,7 +150,7 @@ echo 'deb [trusted=yes arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 echo 'deb [trusted=yes] https://deb.opera.com/opera-stable/ stable non-free' > /etc/apt/sources.list.d/opera.list
 echo 'deb [trusted=yes] http://build.openvpn.net/debian/openvpn/release/2.4 xenial main' > /etc/apt/sources.list.d/openvpn-aptrepo.list
 echo 'deb [trusted=yes] https://download.sublimetext.com/ apt/stable/' > /etc/apt/sources.list.d/sublime-text.list
-echo 'deb [trusted=yes arch=amd64] https://downloads.iridiumbrowser.de/deb/ stable main' > /etc/apt/sources.list.d/iridium-browser.list
+#echo 'deb [trusted=yes arch=amd64] https://downloads.iridiumbrowser.de/deb/ stable main' > /etc/apt/sources.list.d/iridium-browser.list
 #echo 'deb [trusted=yes arch=amd64] https://repo.skype.com/deb stable main' > /etc/apt/sources.list.d/skype-stable.list
 
 # =========================================================
@@ -213,8 +213,9 @@ sudo apt -y install gparted gnome-disk-utility usb-creator-gtk
 sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
 sudo apt -y install ntfs-config git zsh fonts-powerline
 sudo apt -y install systemd-ui
-sudo apt -y install google-chrome-stable iridium-browser firefox mc
-sudo apt -y install opera-stable
+sudo apt -y install google-chrome-stable
+# iridium-browser 
+sudo apt -y install opera-stable firefox mc
 sudo apt -y install xfonts-terminus console-terminus ttf-dejavu ttf-liberation fonts-elementary-core fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree
 sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
