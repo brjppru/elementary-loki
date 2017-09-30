@@ -139,6 +139,7 @@ sudo add-apt-repository -y ppa:jonathonf/backports
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
 sudo add-apt-repository -y ppa:caffeine-developers/ppa
 sudo add-apt-repository -y ppa:atareao/atareao
+sudo add-apt-repository -y ppa:hluk/copyq
 
 # =========================================================
 # no ppa repos
@@ -219,7 +220,7 @@ sudo apt -y install papirus-icon-theme libreoffice-style-papirus
 sudo apt -y install mixxx
 sudo apt -y install nasc gqrcode vim-nox
 sudo apt -y install tightvncserver
-sudo apt -y install glipper xclip xsel autocutsel
+sudo apt -y install xclip xsel autocutsel copyq
 
 # =========================================================
 # games
