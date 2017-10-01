@@ -192,7 +192,7 @@ sudo apt -y install viewnior qiv
 sudo apt -y install elementary-wallpapers-extra comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt -y install transmission minissdpd natpmp-utils
 sudo apt -y install telegram
-sudo apt -y install tshark iftop sngrep ngrep
+sudo apt -y install tshark iftop sngrep ngrep sockstat
 sudo apt -y install putty git
 sudo apt -y install homebank
 sudo apt -y install xournal
