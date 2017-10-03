@@ -42,6 +42,7 @@ sudo apt -y purge fonts-opendyslexic gsignond gsignond-extension-pantheon gsigno
 sudo apt -y purge libgsignon-glib1 libgsignond-common0 libpantheon-online-accounts0 pantheon-online-accounts-plugin-lastfm
 sudo apt -y purge python3-problem-report switchboard-plug-parental-controls libaccounts-glib0 python3-apport
 sudo apt -y purge apport apport-gtk
+sudo apt -y purge gnome-orca
 
 # =========================================================
 # nuked locale
