@@ -173,6 +173,7 @@ echo libbcg729-0	libbcg729-0/patent_compliance	boolean	true | debconf-set-select
 echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-selections
 #
 sudo apt -y install tataranovich-keyring
+# localepurge
 #
 sudo apt -y install giggle git gitg
 sudo apt -y install solaar
