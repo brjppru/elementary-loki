@@ -50,7 +50,7 @@ sudo apt -y purge gnome-orca
 # nuked locale
 # =========================================================
 
-#sudo apt -y purge language-pack*
+sudo apt -y purge language-pack*
 sudo apt -y install language-pack-en language-pack-gnome-en language-pack-gnome-en-base language-pack-ru language-pack-gnome-ru language-pack-gnome-ru-base
 
 # =========================================================
@@ -134,7 +134,7 @@ sudo apt -y install tataranovich-keyring
     figlet "done"
 
 # =========================================================
-# begin install
+# begin install's
 # =========================================================
 #
 echo opera-stable opera-stable/add-deb-source boolean false | debconf-set-selections
@@ -216,9 +216,15 @@ sudo apt -y install ubuntu-restricted-extras ffmpeg x264 libdvdread4 lame vlc br
 sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-dev android-tools-adb android-tools-fsutils gphoto2 jmtpfs mtpfs
 
 # =========================================================
+# virtualbox
+# =========================================================
+#sudo apt -y install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+#sudo apt -y install virt-manager netcat
+
+# =========================================================
 # game's
 # =========================================================
-sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku
+#sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku
 
 # =========================================================
 # nuke archives
