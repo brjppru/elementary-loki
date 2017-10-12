@@ -67,7 +67,7 @@ sudo update-rc.d -f apparmor remove
 sudo apt -y update
 sudo apt -y install apt-transport-https ca-certificates figlet dpkg deborphan dconf-editor python-gpgme
 sudo apt -y install software-properties-common software-properties-gtk debconf-utils
-sudo apt -y install aptitude ppa-purge bzip2 gdebi synaptic gdebi dconf-editor git
+sudo apt -y install aptitude ppa-purge bzip2 gdebi synaptic gdebi dconf-editor git tig
 
 # =========================================================
 # add repos
