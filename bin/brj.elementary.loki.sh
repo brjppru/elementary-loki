@@ -149,6 +149,7 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # =========================================================
 
 sudo apt -y install viewnior acpi
+sudo apt -y install nfs-common
 sudo apt -y install transmission minissdpd natpmp-utils
 sudo apt -y install tshark iftop sngrep ngrep sockstat
 sudo apt -y install e2fslibs e2fsprogs dosfstools util-linux ntfs-3g
