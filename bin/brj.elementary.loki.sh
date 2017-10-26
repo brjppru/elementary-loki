@@ -226,6 +226,7 @@ sudo apt -y install android-tools-adb android-tools-fastboot bluetooth libfuse-d
 # game's
 # =========================================================
 #sudo apt -y install aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku
+# hedgewars
 
 # =========================================================
 # nuke archives
