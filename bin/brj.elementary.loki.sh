@@ -148,7 +148,7 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
-sudo apt -y install viewnior acpi
+sudo apt -y install viewnior acpi arandr minicom
 sudo apt -y install ristretto screenruler
 sudo apt -y install nfs-common
 sudo apt -y install transmission minissdpd natpmp-utils
