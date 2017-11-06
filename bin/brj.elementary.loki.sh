@@ -89,6 +89,7 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8
 sudo add-apt-repository -y ppa:caffeine-developers/ppa
 sudo add-apt-repository -y ppa:atareao/atareao
 sudo add-apt-repository -y ppa:hluk/copyq
+sudo add-apt-repository -y ppa:ubuntuhandbook1/audacity
 
 # =========================================================
 # no ppa repos
@@ -165,7 +166,7 @@ sudo apt -y install sublime-text
 sudo apt -y install sqlite3 smbclient
 sudo apt -y install linphone linphone-plugin-g729
 sudo apt -y install telegram
-sudo apt -y install putty git
+sudo apt -y install putty git shellcheck
 sudo apt -y install keepassx gmrun keepass2
 sudo apt -y install haveged molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 sudo apt -y install gnome-system-monitor caffeine netcat sshfs
